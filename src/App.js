@@ -26,10 +26,18 @@ function App() {
       setMode("dark");
       document.body.style.backgroundColor = "#042743";
       showAlert("Dark Mode has been Enabled", "success");
+      // document.title="TextUtils - Dark Mode";          for updating titles according to state changes
+      // setInterval(() => {
+      //   document.title = "TextUtils is amazing app";
+      // }, 2000);
+      // setInterval(() => {
+      //   document.title = "TextUtils is used for text manipulation";
+      // }, 1500);                                        for updating titles according to state changes          
     } else {
       setMode("light");
       document.body.style.backgroundColor = "white";
       showAlert("light Mode has been Enabled", "success");
+      // document.title = "TextUtils - Light Mode";       for updating titles according to state changes
     }
   };
   return (
